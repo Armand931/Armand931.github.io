@@ -1,0 +1,283 @@
+body{
+    font-family: 'Century Gothic', calibri, serif;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+
+header{
+    height: 100px;
+}
+
+footer{
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #C5C5C5;
+    border-top: 2px solid #AAA;
+}
+
+nav{
+    width: 100%;
+    background-color: #424558;
+}
+
+
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+nav li{
+    list-style-type: none;
+    float: left;
+
+}
+
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.table{
+    display: table;
+    margin: 0 auto;
+}
+
+.menu-ind:hover, .presentation{
+    border-top: 5px solid #4c8;
+    background-color: rgba(64, 200, 130, 0.15);
+}
+
+.menu-exp:hover, .parcours{
+    border-top: 5px solid #f1dc4f;
+    background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-hob:hover, .competences{
+    border-top: 5px solid #0070db;
+    background-color: rgba(000, 112, 192, 0.15);
+}
+
+
+.menu-con:hover{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+nav li:hover a{
+    padding:15px 30px 20px 30px;
+}
+
+section{
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.sec{
+    margin:0px 10%;      /* 10% droite et gauche*/
+}
+
+.left{
+    float: left;
+    width: 30%;
+}
+
+.right{
+    float: left;
+    width: 70%;
+}
+
+
+.cleft, .cright, .sousleft, .sousright{
+    width: 50%;
+    float: left; 
+}
+
+.sec::after, .exp::after{                                       /* Eviter un parent collapse*/
+    content:"";
+    display: table;
+    clear: both;
+
+}                 
+
+.orange{
+    border-top: 5px solid #e47d26;
+    background-color: rgba(228, 117, 38, 0.15);
+    margin-bottom: 0px;
+}
+
+
+.rose{
+    border-top: 5px solid #e44d96;
+    background-color: rgba(228, 77, 128, 0.15);
+    margin-bottom: 0px;
+}
+
+.vert{
+    border-top: 5px solid #5f6;
+    background-color: rgba(70, 240, 80, 0.15);
+}
+
+.bleu{
+    border-top: 5px solid #29c;
+    background-color: rgba(30, 152, 212, 0.15);
+}
+
+
+.jaune{
+    border-top: 5px solid #f3e241;
+    background-color: rgba(240, 255, 69, 0.15);
+}
+
+
+
+.rouge{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+
+
+
+.leftexp{
+    width: 45%;
+    float: left;
+}
+
+.rightexp{
+    width: 50%;
+    float: left;
+    margin-left: 5%;
+}
+
+
+.leftexp img{
+    width: 100%;
+    max-width: 400px;
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 780px){
+    header{
+        height: 50px;
+    }
+
+    h1{
+        font-size: 28px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    nav li a{
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    nav li:hover a{
+        padding: 5px 10px 10px 10px;
+    }
+}
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 75%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+    margin: 50px auto;
+    border: 1px solid #999;
+    width: 65%;
+}
+
+h2,
+span {
+  color: #666;
+  display: block;
+  padding: 0 0 5px;
+}
+form {
+  padding: 25px;
+  margin: 25px;
+  box-shadow: 0 2px 5px #f5f5f5;
+  background: #eee;
+}
+input,
+textarea {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #1c87c9;
+  outline: none;
+}
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #1c87c9;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+button:hover {
+  background: #2371a0;
+}
+.close {
+  color:rgb(92, 89, 89);
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+button.button {
+  background: none;
+  border-top: none;
+  outline: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: #02274a 1px solid;
+  padding: 0 0 3px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+button.button:hover {
+  border-bottom: #a99567 1px solid;
+  color: #a99567;
+}
